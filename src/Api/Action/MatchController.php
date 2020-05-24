@@ -45,6 +45,8 @@ class MatchController
         $jsonResponse = $this->prepareJsonResponse($data);
 
         return new Response($jsonResponse);
+
+
     }
 
     /**
