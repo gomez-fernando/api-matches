@@ -10,8 +10,8 @@ use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 class RequestTransformer
 {
     /**
-     * getRequiredFile
-     * Description: recovery data's parameters from HttpRequest
+     * getRequiredField
+     * Description : recovery data's parameter from HTTPRequest
      *
      * @param Request $request
      * @param string $fieldName
@@ -41,8 +41,9 @@ class RequestTransformer
     }
 
     /**
-     * getRequiredFile
-     * Description: put on the same level the array's keys
+     * arrayFlatten
+     * Description : put on the same level the array's keys
+     *
      * @param array $array
      * @return array
      */

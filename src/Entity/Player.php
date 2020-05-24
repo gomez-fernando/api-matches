@@ -68,7 +68,7 @@ class Player
     public function __construct()
     {
         $this->score = new ArrayCollection();
-        $this->cards = new ArrayCollection();
+        $this->card = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -182,15 +182,15 @@ class Player
     /**
      * @return Collection|Card[]
      */
-    public function getCards(): Collection
+    public function getCard(): Collection
     {
-        return $this->cards;
+        return $this->card;
     }
 
     public function addCard(Card $card): self
     {
-        if (!$this->cards->contains($card)) {
-            $this->cards[] = $card;
+        if (!$this->card->contains($card)) {
+            $this->card[] = $card;
             $card->setPlayer($this);
         }
 
@@ -199,8 +199,8 @@ class Player
 
     public function removeCard(Card $card): self
     {
-        if ($this->cards->contains($card)) {
-            $this->cards->removeElement($card);
+        if ($this->card->contains($card)) {
+            $this->card->removeElement($card);
             // set the owning side to null (unless already changed)
             if ($card->getPlayer() === $this) {
                 $card->setPlayer(null);

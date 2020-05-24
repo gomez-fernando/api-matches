@@ -5,7 +5,7 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="App\Repository\ScoreRepository")
  * @ORM\Table(name="scores")
  */
 class Score
@@ -85,7 +85,7 @@ class Score
 
     public function setCreatedAt(\DateTimeInterface $createdAt): self
     {
-        $this->createdAt = $createdAt;
+        $this->createdAT = $createdAt;
 
         return $this;
     }
