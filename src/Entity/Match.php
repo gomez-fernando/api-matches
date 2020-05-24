@@ -44,7 +44,7 @@ class Match extends EntityBase
     private $score;
 
     /**
-     * @ORM\OneToMany(targetEntity=Card::class, mappedBy="game")
+     * @ORM\OneToMany(targetEntity=Cards::class, mappedBy="game")
      */
     private $card;
 
@@ -139,14 +139,14 @@ class Match extends EntityBase
     }
 
     /**
-     * @return Collection|Card[]
+     * @return Collection|Cards[]
      */
     public function getCard(): Collection
     {
         return $this->card;
     }
 
-    public function addCard(Card $card): self
+    public function addCard(Cards $card): self
     {
         if (!$this->card->contains($card)) {
             $this->card[] = $card;
@@ -156,7 +156,7 @@ class Match extends EntityBase
         return $this;
     }
 
-    public function removeCard(Card $card): self
+    public function removeCard(Cards $card): self
     {
         if ($this->card->contains($card)) {
             $this->card->removeElement($card);

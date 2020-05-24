@@ -5,13 +5,13 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="App\Repository\CardsRepository")
  * @ORM\Table(name="cards")
  */
-class Card
+class Cards
 {
-    const CARD_TYPE_YELLOW = '1';
-    const CARD_TYPE_RED = '2';
+    const CARD_TYPE_RED     = 'tarjeta-roja';
+    const CARD_TYPE_YELLOW  = 'tarjeta-amarilla';
 
     /**
      * @ORM\Id()
@@ -36,13 +36,13 @@ class Card
     private $type;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Player::class, inversedBy="Card")
+     * @ORM\ManyToOne(targetEntity=Player::class, inversedBy="Cards")
      * @ORM\JoinColumn(nullable=false)
      */
     private $player;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Match::class, inversedBy="Card")
+     * @ORM\ManyToOne(targetEntity=Match::class, inversedBy="Cards")
      * @ORM\JoinColumn(nullable=false)
      */
     private $game;

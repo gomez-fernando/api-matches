@@ -55,9 +55,9 @@ class Player
     private $score;
 
     /**
-     * @ORM\OneToMany(targetEntity=Card::class, mappedBy="player")
+     * @ORM\OneToMany(targetEntity=Cards::class, mappedBy="player")
      */
-    private $card;
+    private $cards;
 
     /**
      * @ORM\ManyToOne(targetEntity=Team::class, inversedBy="players")
@@ -68,7 +68,7 @@ class Player
     public function __construct()
     {
         $this->score = new ArrayCollection();
-        $this->card = new ArrayCollection();
+        $this->cards = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -180,27 +180,27 @@ class Player
     }
 
     /**
-     * @return Collection|Card[]
+     * @return Collection|Cards[]
      */
-    public function getCard(): Collection
+    public function getCards(): Collection
     {
-        return $this->card;
+        return $this->cards;
     }
 
-    public function addCard(Card $card): self
+    public function addCard(Cards $card): self
     {
-        if (!$this->card->contains($card)) {
-            $this->card[] = $card;
+        if (!$this->cards->contains($card)) {
+            $this->cards[] = $card;
             $card->setPlayer($this);
         }
 
         return $this;
     }
 
-    public function removeCard(Card $card): self
+    public function removeCard(Cards $card): self
     {
-        if ($this->card->contains($card)) {
-            $this->card->removeElement($card);
+        if ($this->cards->contains($card)) {
+            $this->cards->removeElement($card);
             // set the owning side to null (unless already changed)
             if ($card->getPlayer() === $this) {
                 $card->setPlayer(null);
