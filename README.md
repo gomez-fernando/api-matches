@@ -1,3 +1,27 @@
+# Título del Proyecto
+
+_API MATCHES_
+
+## Comenzando 🚀
+
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+
+### Instalación
+
+_Los pasos que debes seguir para instalar el proyecto_
+
+```
+1. Descarga la rama master de este repositorio
+2. Modifica en el archivo _.env_ las credenciales de la conexión a tu base de datos
+3. Ejecuta _composer install_
+4. Ejecuta _composer require orm-fixtures_ 
+5. Ejecuta _php bin/console doctrine:schema:create_ para crear el esquema de la base de datos
+6. Ejecuta _php vin/console doctrine:fixtures:load_ para cargar los jugadores en la base de datos
+7. Crea un virtual host con un nombre por ejemplo: _api-matches.com_
+8. La url del end point sería entonces: _http://api-matches.com/api/v1/bnzsa/match-data_
+9. Puedes utilizar Postman y otro software para concetarte al API.
+10. Realiza las peticiones por POST a este end point utilizando el siguiente json de ejemplo 
+(el archivo se encuentra en la carpeta /json):
 {
   "match": {
     "id": "598b0d1dc6b14b812d9457d9",
@@ -167,3 +191,8 @@
     }
   }
 }
+11. De esta manera, cada petición que incorpore un id de partido nuevo lo dará de alta en la bsae de datos, por el contrario, si el id ya existe lo modificará con cada llamada al API.
+```
+
+---
+⌨️ con ❤️ por [Fernando Gómez](https://gomez-fernando.github.io/portfolio/) 😊
