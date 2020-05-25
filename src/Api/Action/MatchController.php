@@ -23,7 +23,7 @@ class MatchController
     private $managerRegistry = null;
     // Object serializer
     private $serializer = null;
-    // Dependences Injection
+    // Dependencies Injection
     public function __construct(EventDispatcherInterface $dispatcher,ManagerRegistry $managerRegistry,SerializerInterface $serializer)
     {
         $this->managerRegistry = $managerRegistry;
@@ -34,7 +34,8 @@ class MatchController
     /**
      * @Route("/bnzsa/match-data", methods={"POST"})
      *
-     * @throws \Exception
+     * @param Request $request
+     * @return Response
      */
     public function __invoke(Request $request): Response
     {
