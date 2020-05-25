@@ -194,7 +194,7 @@ _Los pasos que debes seguir para instalar el proyecto_
        }
      }
 </pre>
-5. De esta manera, cada petición que incorpore un id de partido nuevo lo dará de alta en la bsae de datos, por el contrario, si el id ya existe lo modificará con cada llamada al API.
-```
+5. De esta manera, cada petición que incorpore un id de partido nuevo lo dará de alta en la base de datos, por el contrario, si el id ya existe lo modificará con cada llamada al API.
+``
 ---
 ⌨️ con ❤️ por [Fernando Gómez](https://gomez-fernando.github.io/portfolio/) 😊
