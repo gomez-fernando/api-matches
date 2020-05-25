@@ -17,10 +17,13 @@ _Los pasos que debes seguir para instalar el proyecto_
 4. Ejecuta _composer require orm-fixtures_ 
 5. Ejecuta _php bin/console doctrine:schema:create_ para crear el esquema de la base de datos
 6. Ejecuta _php vin/console doctrine:fixtures:load_ para cargar los jugadores en la base de datos
-7. Crea un virtual host con un nombre por ejemplo: _api-matches.com_
-8. La url del end point sería entonces: _http://api-matches.com/api/v1/bnzsa/match-data_
-9. Puedes utilizar Postman y otro software para concetarte al API.
-10. Realiza las peticiones por POST a este end point utilizando el siguiente json de ejemplo 
+
+### Conéctate al API
+
+1. Crea un virtual host con un nombre por ejemplo: _api-matches.com_
+2. La url del end point sería entonces: _http://api-matches.com/api/v1/bnzsa/match-data_
+3. Puedes utilizar Postman y otro software para concetarte al API.
+4. Realiza las peticiones por POST a este end point utilizando el siguiente json de ejemplo 
 (el archivo se encuentra en la carpeta /json):
 {
   "match": {
@@ -191,7 +194,7 @@ _Los pasos que debes seguir para instalar el proyecto_
     }
   }
 }
-11. De esta manera, cada petición que incorpore un id de partido nuevo lo dará de alta en la bsae de datos, por el contrario, si el id ya existe lo modificará con cada llamada al API.
+5. De esta manera, cada petición que incorpore un id de partido nuevo lo dará de alta en la bsae de datos, por el contrario, si el id ya existe lo modificará con cada llamada al API.
 ```
 
 ---
