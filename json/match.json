@@ -11,22 +11,13 @@
     "competition": {
       "id": 23,
       "name": "LaLiga Santander",
-      "short_name": "",
       "url": "liga-primera",
       "path": "/futbol/liga-primera/"
     },
     "metadata": {
       "date": "2017-09-24T12:00:00Z",
       "season": "2017-2018",
-      "phase": "liga",
-      "phase_id": "0",
-      "week": 6,
-      "group": "",
-      "status": "finalizado",
-      "minute": 93,
-      "live": true,
-      "tv": "beIN La Liga",
-      "extra": "93"
+      "status": "terminado"
     },
     "location": {
       "name": "RCDE Stadium",
@@ -59,19 +50,10 @@
         "url": "enrique-sanchez-flores-64001",
         "birthdate": "1965-02-05T00:00:00Z"
       },
-      "scores": {
-        "score": 4,
-        "partial": [],
-        "metadata": {
-          "penalty_score": 0,
-          "points": "",
-          "service": false
-        }
-      },
       "scorers": [
         {
           "player": {
-            "id": 5905,
+            "id": 1,
             "name": "Leonardo Carrilho Baptistão",
             "short_name": "Leo Baptistao",
             "url": "leonardo-carrilho-baptistao-5905"
@@ -82,7 +64,7 @@
         },
         {
           "player": {
-            "id": 662,
+            "id": 2,
             "name": "Alejandro Arribas",
             "short_name": "Arribas",
             "url": "alejandro-arribas-garrido-662"
@@ -93,7 +75,7 @@
         },
         {
           "player": {
-            "id": 8827,
+            "id": 3,
             "name": "Gerard Moreno",
             "short_name": "Gerard Moreno",
             "url": "gerard-moreno-balaguero-8827"
@@ -104,7 +86,7 @@
         },
         {
           "player": {
-            "id": 8827,
+            "id": 4,
             "name": "Gerard Moreno",
             "short_name": "Gerard Moreno",
             "url": "gerard-moreno-balaguero-8827"
@@ -117,7 +99,7 @@
       "cards": [
         {
           "player": {
-            "id": 609,
+            "id": 1,
             "name": "Víctor Sánchez",
             "short_name": "Víctor Sánchez",
             "url": "victor-sanchez-mata-609"
@@ -143,19 +125,10 @@
         "url": "pepe-mel-66125",
         "birthdate": "1963-02-28T00:00:00Z"
       },
-      "scores": {
-        "score": 1,
-        "partial": [],
-        "metadata": {
-          "penalty_score": 0,
-          "points": "",
-          "service": false
-        }
-      },
       "scorers": [
         {
           "player": {
-            "id": 11811,
+            "id": 5,
             "name": "Celso Borges",
             "short_name": "Celso Borges",
             "url": "celso-borges-mora-11811"
@@ -168,7 +141,7 @@
       "cards": [
         {
           "player": {
-            "id": 11600,
+            "id": 2,
             "name": "Luís Carlos Correia Pinto",
             "short_name": "Luisinho",
             "url": "luis-carlos-correia-pinto-11600"
@@ -180,7 +153,7 @@
         },
         {
           "player": {
-            "id": 963,
+            "id": 3,
             "name": "Bruno Alexandre Vilela Gama",
             "short_name": "Bruno Alexandre Vilela Gama",
             "url": "bruno-alexandre-vilela-gama-963"
